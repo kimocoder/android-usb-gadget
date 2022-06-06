@@ -1,6 +1,6 @@
 # USB Gadget Tool
 
-<img src="static/usb-gadget-tool-3.png" align="right" height="500" alt="USB Gadget Tool Screenshot">  
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/usb-gadget-tool-3.png" align="right" height="500" alt="USB Gadget Tool Screenshot">  
 
 Convert your Android phone to any USB device you like!  
 USB Gadget Tool allows you to create and activate USB device roles, like a mouse or a keyboard. Connected USB hosts (e.g. a normal computer) will then identify your Android device only under that role.
@@ -10,9 +10,14 @@ Following USB gadgets are integrated:
 * Keyboard & Mouse (/dev/hidg0, /dev/hidg1)
 * FIDO CTAP (/dev/hidg0; for WebAuthn)
 * CCID (/dev/ccid_ctrl, /dev/ccid_bulk)
+* UVC camera (/dev/video?)
 
 USB Gadget Tool requires root permissions and a Kernel with ConfigFS support.
 Currently the app only enables the USB Gadget. For the usage of these device endpoints (e.g. /dev/hidg0) further apps are required (see Use-Cases).
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/net.tjado.usbgadget/)
 
 ## Use-Cases
 * [Authorizer](https://github.com/tejado/Authorizer)
